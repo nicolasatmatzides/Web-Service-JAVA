@@ -10,7 +10,20 @@ a{
     cursor: pointer;
 }
 .InfoIns{
-    background-color: white;
+    width:420px;
+    height:315px;
+    text-align: center;
+    margin-top: +200px;
+    justify-content: center;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: -30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.card-body{
+    margin-top: inherit;
 }
 .tituloindex{
     padding: 0;
@@ -33,11 +46,13 @@ a{
     font-size: 18px;
     text-align: right;
 }
+
 #apresentacao{
     height: 100%;
     width: 100%;
     position: relative;
     background-color: #333;
+
 }
 .SaibaMais{
     height: 180px;
