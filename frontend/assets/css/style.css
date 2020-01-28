@@ -9,12 +9,15 @@ body{
 a{
     cursor: pointer;
 }
-
+.InfoIns{
+    background-color: white;
+}
 .tituloindex{
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
+    text-align: center;
     height: 300px;
     width: 700px;
     position: absolute;
@@ -44,12 +47,6 @@ a{
     left: calc(50% - 250px);
     text-align: center;
     margin-bottom: 80px;
-}
-.SaibaMais h2{
-    color: white;
-    font-family: inherit;
-    font-weight: 200;
-    font-size: 40px;
 }
 
 .imagemLogo{
@@ -148,7 +145,16 @@ a{
 
 
 
-
+#topo-instrutores{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/home/Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 #topo{
     height: 100%;
     width: 100%;
@@ -251,7 +257,7 @@ a{
     margin: 10px;
 }
 
-.video{
+.cardsInstrutores{
     text-align: center;
 }
 #dicas h1{
