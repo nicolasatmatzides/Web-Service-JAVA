@@ -11,31 +11,32 @@ a{
 }
 
 .tituloindex{
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
     height: 300px;
     width: 700px;
-  position: absolute;
-  margin: 0px auto;
-  color: rgba(255,255,255,0.8);
+    position: absolute;
+    margin: 0px auto;
+    color: rgba(255,255,255,0.8);
     left: calc(50% - 350px);
     top: calc(50% - 150px);
 }
 .tituloindex h2{
-  text-align: center;
+    text-align: center;
 }
 .tituloindex h5{
     font-size: 18px;
     text-align: right;
 }
 #apresentacao{
+    height: 100%;
     width: 100%;
     position: relative;
     background-color: #333;
 }
-.tituloPlaylist{
+.SaibaMais{
     height: 180px;
     width: 500px;
     position: absolute;
@@ -44,7 +45,7 @@ a{
     text-align: center;
     margin-bottom: 80px;
 }
-.tituloPlaylist h2{
+.SaibaMais h2{
     color: white;
     font-family: inherit;
     font-weight: 200;
@@ -55,9 +56,7 @@ a{
     padding: 0px;
     margin: 20px 0px;
     height: 35px;
-
 }
-
 #barraMenu{
     font-family: inherit;
 }
@@ -148,6 +147,200 @@ a{
 }
 
 
+
+
+#topo{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/home/Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.transparencia-fundo{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+}
+#topo h1{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+}
+#sectionreceita1{
+    width: 100%;
+    position: relative;
+}
+.titulo{
+    margin: 150px 0px 15px 0px;
+    height: 250px;
+    width: 500px;
+    left: calc(50% - 250px);
+    text-align: center;
+
+}
+.titulo h1{
+    width: 100%;
+    color: white;
+    margin-bottom: 50px;
+}
+.botaoLink a{
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin-top: 100px;
+    text-align: center;
+    width: 100px;
+    list-style: none;
+    border: solid;
+    border-color: white;
+    border-width: medium;
+    color: white;
+}
+.botaolink a:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    border-color: blue;
+}
+#principais{
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+}
+.imgPrincipais{
+    margin-bottom: 35px;
+}
+.imgPrincipais img{
+    border: solid;
+    border-color: rgba(255,255,255,0.8);
+    border-width: medium;
+}
+
+#principais h1, h3, p{
+    font-family: inherit;
+    font-weight: 300;
+    color: white;
+}
+#principais h3{
+    font-size: 35px;
+}
+.tituloPagina h1{
+    margin-bottom: 35px;
+}
+.artigo{
+}
+.conteudo{
+    margin-top: 150px;
+}
+.conteudo h1{
+    text-align: center;
+    font-family: inherit;
+    font-weight: 300;
+    color: white;
+}
+.conteudo p{
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 400;
+    color: white;
+}
+.conteudo img{
+    margin: 10px;
+}
+
+.video{
+    text-align: center;
+}
+#dicas h1{
+    text-align: center;
+    margin-top: 150px;
+    font-family: inherit;
+    font-weight: 300;
+    color: white;
+}
+#dicas h3{
+    background-color: rgba(255,255,255,0.2);
+}
+#backgroundreceitas{
+    background-image: url(../../receitas/images/gordon.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#sectionreceita2 h2{
+    text-align: center;
+    color: white;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.container_cafe{
+    border: solid;
+    text-align: center;
+}
+.container_cafe img{
+    width: 300px;
+    height: 300px;
+}
+#sectionreceita3 h2{
+    text-align: center;
+    margin: 0px auto;
+    color: white;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.container_almoço{
+    border: solid;
+    text-align: center;
+}
+.container_almoço img{
+    width: 300px;
+    height: 300px;
+}
+#sectionreceita4 h2{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.container_janta{
+    border: solid;
+    text-align: center;
+}
+.container_janta img{
+    width: 300px;
+    height: 300px;
+}
+
+#footer{
+    background-color: black;
+    padding: 70px 0px;
+}
+.icons{
+    text-align: center;
+    color: #aaa;
+    font-size: 40px;
+}
+.fa{
+    padding: 0px 15px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.fa:hover{
+    color: white;
+    transition: 0.5s;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: helvetica;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.
 
 
 #topo{
