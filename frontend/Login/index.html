@@ -26,8 +26,8 @@
                         <li><a href="../Sobre/index.html">SOBRE</a></li>
                         <li><a href="../Comentarios/index.html">COMENTÁRIOS</a></li>
                         <li class="active"><a href="index.html">INSTRUTORES</a></li>
-                        <li><a href="../Login/index.html">LOGIN</a></li>
-                        <li><a href="../Registros/index.html">REGISTRO</a></li>
+                        <li><a href="../Registros/index.html">LOGIN</a></li>
+                        <li><a href="/index.html">REGISTRO</a></li>
                         <li><a href="../Tabelas/index.html">TABELAS</a></li>
                     </ul>
                 </div>
@@ -42,63 +42,46 @@
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
-
 <body>
 
-<!-- inicio do conteudo da pagina - login -->
-<div id="principal">
 
-    <div class="imagemLogo">
-        <img src=""/>
-    </div>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>Recuperacao de senha </title>
+    <link href="../assets/css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <!-- formulario -->
-    <div class="formCad">
-        <h1>CADASTRE-SE</h1>
-        <p>Digite seus dados para se cadastrar no Cursos Lero Lero</p>
-        <br>
-        <form method="post">
-            <div class="pt1">
-                <p>Nome completo:</p>
-                <input id="nome" name="nomeCompleto" type="text" required>
-                <p>Data de Nascimento:</p>
-                <input id="data" name="dataNascimento" type="date" required>
-                <p>CPF:</p>
-                <input id="nome" name="cpf" type="text" required>
-                <p>Celular:</p>
-                <input id="nome" nome="celular" type="text" required>
-                <p>Cep:</p>
-                <input id="nome" name="cep" type="text" required>
-                <p>Endereço:</p>
-                <input id="nome" name="endereco" type="text" required>
+</head>
+<body>
+<div class="col-md-12 tituloindex h5">
+    <!-- inicio do conteudo da pagina - login -->
+    <div id="principal">
+        <!-- formulario -->
+        <div class="formCad">
+            <h1>RECUPERAR SENHA</h1>
+            <p>Digite os dados solicitados abaixo para recuperar sua senha!</p>
+            <br>
+            <form method="POST">
+                <div class="pt1Rec">
+                    <p>E-mail:</p>
+                    <input type="email" name="email" required>
+                    <p>Insira a nova Senha:</p>
+                    <input type="password" name="senha" required>
+                    <p>Confirme a Senha:</p>
+                    <input type="password" name="confirmasenha" required>
+                    <div class="botoes">
+                        <a href="home.jsp"><input id="cancelarRec" type="button" name="cancelar" value="Cancelar"></a>
+                        <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Recuperar"></a>
+                    </div>
+                </div>
+            </form>
 
-            </div>
-            <div class="pt2">
-                <p>Email:</p>
-                <input id="email" name="email" type="email" required>
-                <p>Login:</p>
-                <input id="senha" name="apelido" type="text" required>
-                <p>Senha:</p>
-                <input id="date" name="senha" type="password" required>
-                <p>Confirmação de senha:</p>
-                <input id="date"  name="confSenha" type="password" required>
-                <p>Cidade:</p>
-                <input id="nome" name="cidade" type="text" required>
-                <p>Bairro:</p>
-                <input id="nome" name="bairro" type="text" required>
-
-            </div>
-            <a href="home.jsp"><input id="cancelar" type="button" name="cancelar" value="Cancelar"></a>
-            <input id="cadastrar" type="submit" name="enviar" value="Cadastrar">
-        </form>
+        </div>
 
     </div>
-
-</div>
 
 </body>
-
-
-
 </html>
 </html>
