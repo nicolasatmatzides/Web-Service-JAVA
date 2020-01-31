@@ -12,6 +12,15 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-4.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-4.4.1-dist/css/bootstrap-reboot.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+
+    <!-- lOGIN -->
+    <title>Recuperacao de senha </title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link href="../assets/css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+</head>
+
 <body>
 <header>  <div id="barraMenu">
     <nav class="navbar navbar-default navbar-static-top">
@@ -35,53 +44,35 @@
         </div>
     </nav>
 </div>
+
+<!-- inicio do conteudo da pagina - login -->
+<div class="col-md-12 tituloindex h5">
+<div id="principal">
+            <!-- formulario -->
+<div class="formCad">
+    <h1>RECUPERAR SENHA</h1>
+    <p>Digite os dados solicitados abaixo para recuperar sua senha!</p>
+    <br>
+        <form method="POST">
+            <div class="pt1Rec">
+                <p>E-mail:</p>
+                <input type="email" name="email" required>
+                <p>Insira a nova Senha:</p>
+                <input type="password" name="senha" required>
+                <p>Confirme a Senha:</p>
+                <input type="password" name="confirmasenha" required>
+                <div class="botoes">
+                    <a><input id="cancelarRec" type="button" name="cancelar" value="Cancelar"></a>
+                    <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Recuperar"></a>
+                </div>
+            </div>
+        </form>
+</div>
 </header>
+
 <script src="https://unpkg.com/@popperjs/core@2.0.0"></script>
 <script src="../assets/js/jquery-1.11.0.min.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<body>
-
-
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-    <title>Recuperacao de senha </title>
-    <link href="../assets/css/style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-</head>
-<body>
-<div class="col-md-12 tituloindex h5">
-    <!-- inicio do conteudo da pagina - login -->
-    <div id="principal">
-        <!-- formulario -->
-        <div class="formCad">
-            <h1>RECUPERAR SENHA</h1>
-            <p>Digite os dados solicitados abaixo para recuperar sua senha!</p>
-            <br>
-            <form method="POST">
-                <div class="pt1Rec">
-                    <p>E-mail:</p>
-                    <input type="email" name="email" required>
-                    <p>Insira a nova Senha:</p>
-                    <input type="password" name="senha" required>
-                    <p>Confirme a Senha:</p>
-                    <input type="password" name="confirmasenha" required>
-                    <div class="botoes">
-                        <a href="home.jsp"><input id="cancelarRec" type="button" name="cancelar" value="Cancelar"></a>
-                        <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Recuperar"></a>
-                    </div>
-                </div>
-            </form>
-
-        </div>
-
-    </div>
-
-</body>
-</html>
 </html>

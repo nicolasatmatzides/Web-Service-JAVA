@@ -435,8 +435,7 @@ a{
 <!-- LOGIN INDEX.HTML-->
 
          /* CSS Cadastro */
-
-     *, html, body, h1, p, div, section {
+*, html, body, h1, p, div, section {
          margin: 0;
          padding:0;
      }
@@ -549,7 +548,7 @@ body {
 }
 
 .formCad form>a{
-    width: 15%!important;
+    width: auto!important;
 }
 
 #data{
@@ -643,7 +642,7 @@ body {
     width: 32%;
     font-weight: bold;
     color: white;
-    margin-left: 8%!important;
+    margin-left: 3%!important;
     padding: 4%;
     font-size: 15px;
     background-color: #c9c9c9;
