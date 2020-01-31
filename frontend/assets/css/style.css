@@ -9,21 +9,23 @@ body{
 a{
     cursor: pointer;
 }
+.card-body{
+    background-position: inherit;
+    text-align:center;
+}
 .InfoIns{
-    width:420px;
-    height:315px;
-    text-align: center;
     margin-top: +200px;
     justify-content: center;
     margin-right: auto;
+    margin-left: auto;
     display: flex;
     margin-bottom: -30px;
-    cursor: pointer;
     position: relative;
     overflow: hidden;
 }
 .card-body{
     margin-top: inherit;
+
 }
 .tituloindex{
     padding: 0;
@@ -52,6 +54,14 @@ a{
     width: 100%;
     position: relative;
     background-color: #333;
+
+}
+#apresentacaocomentario{
+    height: 90%;
+    width: 100%;
+    position: relative;
+    background-color: #333;
+
 
 }
 .SaibaMais{
@@ -275,65 +285,6 @@ a{
 .cardsInstrutores{
     text-align: center;
 }
-#dicas h1{
-    text-align: center;
-    margin-top: 150px;
-    font-family: inherit;
-    font-weight: 300;
-    color: white;
-}
-#dicas h3{
-    background-color: rgba(255,255,255,0.2);
-}
-#backgroundreceitas{
-    background-image: url(../../receitas/images/gordon.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-#sectionreceita2 h2{
-    text-align: center;
-    color: white;
-    margin: 0px auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-.container_cafe{
-    border: solid;
-    text-align: center;
-}
-.container_cafe img{
-    width: 300px;
-    height: 300px;
-}
-#sectionreceita3 h2{
-    text-align: center;
-    margin: 0px auto;
-    color: white;
-    margin-top: 150px;
-    margin-bottom: 100px;
-}
-.container_almoço{
-    border: solid;
-    text-align: center;
-}
-.container_almoço img{
-    width: 300px;
-    height: 300px;
-}
-#sectionreceita4 h2{
-    text-align: center;
-    color: white;
-    margin-top: 150px;
-    margin-bottom: 100px;
-}
-.container_janta{
-    border: solid;
-    text-align: center;
-}
-.container_janta img{
-    width: 300px;
-    height: 300px;
-}
 
 #footer{
     background-color: black;
@@ -477,7 +428,7 @@ body {
     padding-top: 2%;
 }
 
-.formCad p{
+.formCad {
     padding-left: 2%;
     display: inline-block;
     padding-top: 2%;
@@ -505,11 +456,7 @@ body {
     margin: auto;
 }
 
-.pt1, .pt2 input,p{
-    font-family: arial;
-    display: block!important;
-    margin-bottom: white;
-}
+
 
 #select{
     padding: 2%;
