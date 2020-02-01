@@ -49,13 +49,7 @@ a{
     text-align: right;
 }
 
-#apresentacao{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background-color: #333;
 
-}
 #apresentacaocomentario{
     height: 90%;
     width: 100%;
@@ -73,7 +67,25 @@ a{
     text-align: center;
     margin-bottom: 80px;
 }
-
+#apresentacao{
+    height: 50%;
+    width: 100%;
+    position: relative;
+    background-color: #333;
+}
+#apresentacaoistrutores{
+    height: 90%;
+    width: 100%;
+    position: relative;
+    background-color: #333;
+}
+.lead{
+    margin-top: auto;
+    border-color: black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
 .imagemLogo{
     padding: 0px;
     margin: 20px 0px;
@@ -286,7 +298,7 @@ a{
 }
 
 #footer{
-    background-color: black;
+
     padding: 70px 0px;
 }
 .icons{
