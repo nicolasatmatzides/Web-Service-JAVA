@@ -613,3 +613,13 @@ body {
     background-color:#616161;
     transition: 0.3s;
 }
+
+.formTab{
+    width: auto;
+    height: auto;
+    color: white;
+    padding: 2.2% 2%;
+    cursor: pointer;
+    margin-bottom: 2%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
+}
