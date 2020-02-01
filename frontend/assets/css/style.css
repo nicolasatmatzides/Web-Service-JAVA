@@ -401,10 +401,6 @@ a{
 <!-- LOGIN INDEX.HTML-->
 
          /* CSS Cadastro */
-*, html, body, h1, p, div, section {
-         margin: 0;
-         padding:0;
-     }
 
 
 #principal {
@@ -612,13 +608,45 @@ a{
 }
 
 .formTab{
-    width: auto;
-    height: auto;
-    color: white;
-    padding: 2.2% 2%;
-    cursor: pointer;
-    margin-bottom: 2%;
+    border-radius: 15px;
+    padding-top: 2%;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin-top: 65px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid rgba(112, 112, 112, 0.16);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
+    padding: 2%!important;
+    color: # c7c7c7;
+    font-family: arial;
+    margin-bottom: 2%! important;
+    font-size: 15px;
+    height: 50%;
+    cursor: pointer;
+
+
+.formTab-T {
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+
+}
+
+.formTab-T p{
+    letter-spacing: 0.1px!important;
+    width: 80%;
+    padding: 2!important;
+    margin-bottom: 2%!important;
+
+}
+
+.formTab-T input{
+    border: 1px solid rgba(112, 112, 112, 0.21);
+    margin-bottom: 6%;
+    width: 80%;
+    padding: 10px;
 }
 .one{
     color: #0062cc;

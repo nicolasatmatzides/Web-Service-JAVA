@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head><meta charset="UTF-8">
     <title>Cursos do Lero Lero</title>
     <meta name="description" content="Cursos do Lero Lero">
@@ -41,162 +41,285 @@
 
 
 
-<div class="row">
 
-    <div class="col-md-2 formTab" >
+<div class="col-md-2 formTab container-fluid" >
     <p></p>
-    <!--formulario de turma-->
-    <form>
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">ID:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="ID">
+        <!--formulario de Alunos-->
+        <form>
+            <h1>Cadastro do Aluno</h1>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">CPF:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="cpf" placeholder="CPF">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Nome:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="nome" placeholder="Seu Nome Completo">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Email:</label>
+                <class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Celular:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="celular" placeholder="Número de telefone">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Login:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="login" placeholder="Login">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Senha:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="password" placeholder="Senha">
+            </div>
+            <p></p>
+
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Endereço:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="endereco" placeholder=" Seu Endereço">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Cidade:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Bairro:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="bairro" placeholder="Seu bairro">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Cep:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="cep" placeholder="Seu Cep">
+            </div>
+            <p></p>
+
+            <div class="botoes">
+                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
+            </div>
+        </form>
         </div>
+
+
+        <div class="col-md-2 formTab" >
+        <p></p>
+        <!--formulario de turma-->
+        <form>
+            <h1>Cadastro da Turma</h1>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Data Inicio:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="data_inicio">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Data Final:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="data_final">
+            </div>
+            <p></p>
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Carga horaria:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="carga_horaria">
+            </div>
+            <p></p>
+
+            <div class="botoes">
+                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
+            </div>
+        </form>
+        </div>
+
+
+        <div class="col-md-2 formTab" >
+        <p></p>
+        <!--formulario de Matricula-->
+        <form>
+            <h1>Cadastro de Matrícula</h1>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Data Matricula:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="data_matricula">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Nota:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="nota">
+            </div>
+            <p></p>
+
+            <div class="botoes">
+                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
+            </div>
+        </form>
+        </div>
+
+
+        <div class="col-md-2 formTab" >
         <p></p>
 
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">CPF:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="cpf" placeholder="CPF">
+        <!--formulario de Cursos-->
+
+        <form>
+            <h1>Cadastro do Curso</h1>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Nome:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Requisito:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="requisito">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Ementa:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="ementa">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Carga horária:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="carga_horaria">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Preço:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="preco" placeholder="R$">
+            </div>
+            <p></p>
+
+            <div class="botoes">
+                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
+            </div>
+        </form>
         </div>
+
+
+        <div class="col-md-2 formTab" >
         <p></p>
+        <!--formulario de Instrutor-->
 
+        <form>
+            <h1>Cadastro do Instrutor</h1>
 
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Nome:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Nome:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Email:</label>
+                <class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Valor por hora:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="valor_hora" placeholder="R$">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Login:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="login" placeholder="Login">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Senha:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="password" placeholder="Senha">
+            </div>
+            <p></p>
+
+            <div class="botoes">
+                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
+            </div>
+        </form>
         </div>
+
+
+        <div class="col-md-2 formTab" >
         <p></p>
+        <!--formulario de Administrador-->
 
+        <form>
+            <h1>Cadastro do Administrador</h1>
 
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Nome:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+            </div>
+            <p></p>
 
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Email:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="email" placeholder="nome@exemplo.com">
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Login:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="login" placeholder="Login">
+            </div>
+            <p></p>
+
+            <div class="form-group row">
+                <label class="col-sm-2" for="nome">Senha:</label>
+                <class="col-sm-10">
+                <input type="text" class="form-control" id="password" placeholder="Senha">
+            </div>
+            <p></p>
+
+            <div class="botoes">
+                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
+            </div>
+        </form>
         </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Celular:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="celular" placeholder="Número de telefone">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Login:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="login" placeholder="Login">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Senha:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="senha" placeholder="Senha">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Endereço:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="endereco" placeholder=" Seu Endereço">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Cidade:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Bairro:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="bairro" placeholder="Seu bairro">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Cep:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="cep" placeholder="Seu Cep">
-        </div>
-        <p></p>
-
-        <button type="submit" class="btn btn-primary">Envia</button>
     </div>
-
-
-    <div class="col-md-2 formCad" >
-    <p></p>
-        <!--formulario de Instrutor -->
-    <form>
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">ID:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="ID">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Nome:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Email:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="email" placeholder="nome@exemplo.com">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Valor por hora:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="valor_hora" placeholder="R$">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Login:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="login" placeholder="Login">
-        </div>
-        <p></p>
-
-
-        <div class="form-group row">
-            <label class="col-sm-2" for="nome">Senha:</label>
-            <class="col-sm-10">
-            <input type="text" class="form-control" id="senha" placeholder="Senha">
-        </div>
-        <p></p>
-
-        <button type="submit" class="btn btn-primary">Envia</button>
-    </form>
-    </div>
-
-
-
 </div>
-
 
 <script src="https://unpkg.com/@popperjs/core@2.0.0"></script>
 <script src="../assets/js/jquery-1.11.0.min.js"></script>
