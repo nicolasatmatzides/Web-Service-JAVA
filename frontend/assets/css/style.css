@@ -14,22 +14,10 @@ a{
     text-align:center;
 }
 .InfoIns{
-    margin-top: +200px;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    margin-bottom: -30px;
-    position: relative;
-    overflow: hidden;
+    text-align: center;
 }
 .InfoIndex{
-    margin-top: +100px;
-    justify-content: center;
-    margin-left: auto;
-    margin-bottom: -30px;
-    position: center;
-    overflow: hidden;
+    text-align: center;
 }
 .card-body{
     margin-top: inherit;
@@ -55,14 +43,31 @@ a{
     font-size: 18px;
     text-align: right;
 }
-
+.sobreIndex{
+    margin-top: -100px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    text-align: center;
+    height: 300px;
+    width: 700px;
+    position: absolute;
+    color: rgba(255,255,255,0.8);
+    left: calc(50% - 350px);
+    top: calc(50% - 150px);
+}
+.sobreIndex h2{
+    text-align: center;
+}
+.sobreIndex h5{
+    font-size: 18px;
+    text-align: right;
+}
 
 #apresentacaocomentario{
-    height: 90%;
     width: 100%;
     position: relative;
     background-color: #333;
-
 
 }
 .SaibaMais{
@@ -75,13 +80,11 @@ a{
     margin-bottom: 80px;
 }
 #apresentacao{
-    height: 100%;
     width: 100%;
     position: relative;
     background-color: #333;
 }
 #apresentacaoistrutores{
-    height: 90%;
     width: 100%;
     position: relative;
     background-color: #333;
@@ -104,6 +107,7 @@ a{
 .navbar-default{
     position: fixed;
     top: 0px;
+    height: 10%;
     width: 100%;
     z-index: 1;
     font-size: 15px;
@@ -135,7 +139,6 @@ a{
     width: 200px;
     height: 1000px;
     background-color: black;
-    top: 0px;
     left: calc(100%);
     transition: 1s;
 }
@@ -161,8 +164,12 @@ a{
     color: #bbb;
 }
 .botaoMenu{
-    color: #888;
-    font-weight: 300;
+
+    color: white;
+    text-align: center;
+    right: 50px;
+    position: absolute;
+    z-index: 500;
 }
 .botaoMenu:after{
     content:'MENU';
@@ -176,12 +183,6 @@ a{
 #navicon:checked ~ .menu{
     transition: 1s;
     left: calc(100% - 200px);
-}
-.botaoMenu{
-    text-align: center;
-    right: 50px;
-    position: absolute;
-    z-index: 500;
 }
 .linha{
     clear: both;
@@ -236,6 +237,10 @@ a{
     background-color:#4f4f4f;
     height: 100%;
     width: 100%;
+}
+
+.card{
+    align-content: center;
 }
 #topo h1{
     text-align: center;
@@ -328,7 +333,7 @@ a{
 }
 
 #footer{
-
+    background-color: black;
     padding: 70px 0px;
 }
 .icons{
@@ -415,7 +420,7 @@ a{
 }
 
 
-<!-- LOGIN INDEX.HTML-->
+
 
          /* CSS Cadastro */
 
@@ -627,8 +632,17 @@ a{
     color: #0062cc;
 }
 .Sobrerow{
-    text-align: center;
+    text-align-last: center;
     color:black;
+}
+.allRow{
+    margin-left: 100px;
+    text-align-last: center;
+}
+.InstrutoresRow{
+    align-content: center;
+    margin-left: 300px;
+    text-align-last: center;
 }
 
 .Tabelas{
