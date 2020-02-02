@@ -23,6 +23,14 @@ a{
     position: relative;
     overflow: hidden;
 }
+.InfoIndex{
+    margin-top: +100px;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: -30px;
+    position: center;
+    overflow: hidden;
+}
 .card-body{
     margin-top: inherit;
 
@@ -67,7 +75,7 @@ a{
     margin-bottom: 80px;
 }
 #apresentacao{
-    height: 50%;
+    height: 100%;
     width: 100%;
     position: relative;
     background-color: #333;
