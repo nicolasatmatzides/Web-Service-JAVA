@@ -38,289 +38,252 @@
     </nav>
 </div>
 </header>
-
-
-
-
-<div class="col-md-2 formTab container-fluid" >
-    <p></p>
-        <!--formulario de Alunos-->
-        <form>
-            <h1>Cadastro do Aluno</h1>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">CPF:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="cpf" placeholder="CPF">
+<section id="topoTabelas">
+ <div class="container-fluid Tabelas">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header one" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Tabela Cursos
+                    </button>
+                </h2>
             </div>
-            <p></p>
 
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Nome:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="nome" placeholder="Seu Nome Completo">
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exemploNomeCursos">Nome</label>
+                            <input class="form-control" id="exemploNomeCursos">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploRequisito">Requesito</label>
+                            <input class="form-control" id="exemploRequisito">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploEmenta">Ementa</label>
+                            <input class="form-control" id="exemploEmenta">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploCargaHora">Carga Horária</label>
+                            <input class="form-control" id="exemploCargaHora">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploPreco">Preço</label>
+                            <input class="form-control" id="exemploPreco">
+                        </div>
+                        <button type="submit" class="btn btn-primary botaoTabelas">Enviar</button>
+                    </form>
+                </div>
             </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Email:</label>
-                <class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Celular:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="celular" placeholder="Número de telefone">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Login:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="login" placeholder="Login">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Senha:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="password" placeholder="Senha">
-            </div>
-            <p></p>
-
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Endereço:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="endereco" placeholder=" Seu Endereço">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Cidade:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Bairro:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="bairro" placeholder="Seu bairro">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Cep:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="cep" placeholder="Seu Cep">
-            </div>
-            <p></p>
-
-            <div class="botoes">
-                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
-            </div>
-        </form>
         </div>
-
-
-        <div class="col-md-2 formTab" >
-        <p></p>
-        <!--formulario de turma-->
-        <form>
-            <h1>Cadastro da Turma</h1>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Data Inicio:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="data_inicio">
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Tabela Instrutores
+                    </button>
+                </h2>
             </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Data Final:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="data_final">
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exemploNomeInstrutor">Nome</label>
+                        <input class="form-control" id="exemploNomeInstrutor">
+                    </div>
+                    <div class="form-group">
+                        <label for="exemploEmailInstrutor">Email</label>
+                        <input type="email" class="form-control" id="exemploEmailInstrutor">
+                    </div>
+                    <div class="form-group">
+                        <label for="exemploValorInstrutor">Valor Hora</label>
+                        <input class="form-control" id="exemploValorInstrutor">
+                    </div>
+                    <div class="form-group">
+                        <label for="exemploLoginInstrutor">Login</label>
+                        <input class="form-control" id="exemploLoginInstrutor">
+                    </div>
+                    <div class="form-group">
+                        <label for="exemploSenhaInstrutores">Senha</label>
+                        <input type="password" class="form-control" id="exemploSenhaInstrutores">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
             </div>
-            <p></p>
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Carga horaria:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="carga_horaria">
-            </div>
-            <p></p>
-
-            <div class="botoes">
-                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
-            </div>
-        </form>
-        </div>
-
-
-        <div class="col-md-2 formTab" >
-        <p></p>
-        <!--formulario de Matricula-->
-        <form>
-            <h1>Cadastro de Matrícula</h1>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Data Matricula:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="data_matricula">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Nota:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="nota">
-            </div>
-            <p></p>
-
-            <div class="botoes">
-                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
-            </div>
-        </form>
-        </div>
-
-
-        <div class="col-md-2 formTab" >
-        <p></p>
-
-        <!--formulario de Cursos-->
-
-        <form>
-            <h1>Cadastro do Curso</h1>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Nome:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Requisito:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="requisito">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Ementa:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="ementa">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Carga horária:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="carga_horaria">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Preço:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="preco" placeholder="R$">
-            </div>
-            <p></p>
-
-            <div class="botoes">
-                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
-            </div>
-        </form>
-        </div>
-
-
-        <div class="col-md-2 formTab" >
-        <p></p>
-        <!--formulario de Instrutor-->
-
-        <form>
-            <h1>Cadastro do Instrutor</h1>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Nome:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Email:</label>
-                <class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Valor por hora:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="valor_hora" placeholder="R$">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Login:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="login" placeholder="Login">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Senha:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="password" placeholder="Senha">
-            </div>
-            <p></p>
-
-            <div class="botoes">
-                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
-            </div>
-        </form>
-        </div>
-
-
-        <div class="col-md-2 formTab" >
-        <p></p>
-        <!--formulario de Administrador-->
-
-        <form>
-            <h1>Cadastro do Administrador</h1>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Nome:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Login:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="login" placeholder="Login">
-            </div>
-            <p></p>
-
-            <div class="form-group row">
-                <label class="col-sm-2" for="nome">Senha:</label>
-                <class="col-sm-10">
-                <input type="text" class="form-control" id="password" placeholder="Senha">
-            </div>
-            <p></p>
-
-            <div class="botoes">
-                <a href="#"><input id="cadastrarRec" type="submit" name="enviar" value="Enviar"></a>
-            </div>
-        </form>
         </div>
     </div>
-</div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                        Tabela Matrículas
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exemploTurmaId">Turma_Id</label>
+                            <input class="form-control" id="exemploTurmaId">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploAlunoId">Alunos_ID</label>
+                            <input type="email" class="form-control" id="exemploAlunoId">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploDataMatricula">Data Matrícula</label>
+                            <input type="date" class="form-control" id="exemploDataMatricula">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploNotaMatricula">Nota</label>
+                            <input class="form-control" id="exemploNotaMatricula">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                        Tabela Turmas
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exemploInstrutorTurma">Instrutor_Id</label>
+                            <input class="form-control" id="exemploInstrutorTurma">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploCursoIdTurma">CursoId</label>
+                            <input type="email" class="form-control" id="exemploCursoIdTurma">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploDataInicioTurma">Data Inicio</label>
+                            <input type="date" class="form-control" id="exemploDataInicioTurma">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploDataFinalTurma">Data Final</label>
+                            <input type="date" class="form-control" id="exemploDataFinalTurma">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploCargaHoraTurma">Carga Horária</label>
+                            <input class="form-control" id="exemploCargaHoraTurma">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                        Tabela Administrador
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exemploNomeAdministrador">Nome</label>
+                            <input class="form-control" id="exemploNomeAdministrador">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploLoginAdministrador">Login</label>
+                            <input class="form-control" id="exemploLoginAdministrador">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploSenhaAdministrador">Senha</label>
+                            <input type="password" class="form-control" id="exemploSenhaAdministrador">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                        Tabela Alunos
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exemploCpfAluno">Cpf</label>
+                            <input class="form-control" id="exemploCpfAluno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploNomeAluno">Nome</label>
+                            <input class="form-control" id="exemploNomeAluno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploEmailAluno">Email</label>
+                            <input type="email" class="form-control" id="exemploEmailAluno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploCelularAluno">Celular</label>
+                            <input class="form-control" id="exemploCelularAluno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploLoginAluno">Login</label>
+                            <input class="form-control" id="exemploLoginAluno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploSenhaAluno">Senha</label>
+                            <input type="password" class="form-control" id="exemploSenhaAluno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploEnderecoAluno">Endereço</label>
+                            <input class="form-control" id="exemploEnderecoAluno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploCidadeAluno">Cidade</label>
+                            <input class="form-control" id="exemploCidadeAluno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploBairroAluno">Bairro</label>
+                            <input class="form-control" id="exemploBairroAluno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exemploCepAluno">Cep</label>
+                            <input class="form-control" id="exemploCepAluno">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+</section>
 
+<section id="footer">
+    <div id="icones">
+        <div id="copyright">
+            <div class="icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fa fa-bath"></i>
+                <i class="fa fa-vine"></i>
+            </div>
+            <div class="copyright">
+                <p>© Design: <spam style="color: rgba(255, 255, 255, 0.7)">Nicolas Atmatzides</spam>. Images: <spam style="color: rgba(255, 255, 255, 0.7)">Google</spam></p>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="https://unpkg.com/@popperjs/core@2.0.0"></script>
 <script src="../assets/js/jquery-1.11.0.min.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
