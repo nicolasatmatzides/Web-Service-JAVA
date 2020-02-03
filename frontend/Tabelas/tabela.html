@@ -12,6 +12,258 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-4.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-4.4.1-dist/css/bootstrap-reboot.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+
+
+    <!-- validaçao do formulario -->
+    <script type="text/javascript">
+        function validar_form_contato(){
+
+            <!-- tabela cursos-->
+            var nome= formtabela.exemploNomeCursos.value;
+            var requisito= formtabela.exemploRequisito.value;
+            var ementa= formtabela.exemploEmenta.value;
+            var carga_horaria= formtabela.exemploCargaHora.value;
+            var preco= formtabela.exemploPreco.value;
+
+            if( nome=="" || nome.length < 4 || nome.length > 50){
+                alert("Campo nome é obrigatório")
+                formtabela.exemploNomeCursos.focus();
+                return false;
+            }
+            if( nomerequisito=="" || requisito.length < 4 || requisito.length > 255){
+                alert("Campo requisito é obrigatório")
+                formtabela.exemploRequisito.focus();
+                return false;
+            }
+            if( ementa=="" || ementa.length < 4 || ementa.length > 255){
+                alert("Campo ementa é obrigatório")
+                formtabela.exemploEmenta.focus();
+                return false;
+            }
+            if( carga_horaria=="" || carga_horaria.length < 4 || carga_horaria.length > 5){
+                alert("Campo carga horaria é obrigatório")
+                formtabela.exemploCargaHora.focus();
+                return false;
+            }if( preco=="" || preco.length < 4 || preco.length > 50){
+                alert("Campo Preco é obrigatório")
+                formtabela.exemploPreco.focus();
+                return false;
+            }
+
+            <!-- tabela Instrutores-->
+            var nomeInstrutor= formtabela.exemploNomeInstrutor.value;
+            var emailInstrutor= formtabela.exemploEmailInstrutor.value;
+            var valorHoraInstrutor= formtabela.exemploValorInstrutor.value;
+            var apelidoInstrutor= formtabela.exemploLoginInstrutor.value;
+            var senhaInstrutor= formcontato.exemploSenhaInstrutores.value;
+
+            if( nomeInstrutor=="" || nomeInstrutor.length < 4 || nomeInstrutor.length > 50){
+                alert("Campo nome é obrigatório")
+                formtabela.exemploNomeInstrutor.focus();
+                return false;
+            }
+            if(emailInstrutor=="" || emailInstrutor.length < 4 || emailInstrutor.length > 50 ){
+                alert("Campo Email é obrigatório")
+                formtabela.exemploEmailInstrutor.focus();
+                return false;
+            }
+            if(valorHoraInstrutor=="" || valorHoraInstrutor.length < 4 || valorHoraInstrutor.length > 10){
+                alert("Campo valor Hora é obrigatório")
+                formtabela.exemploValorInstrutor.focus();
+                return false;
+            }
+            if(apelidoInstrutor=="" || apelidoInstrutor.length < 4 || apelidoInstrutor.length > 20){
+                alert("Campo Login é obrigatório")
+                formtabela.exemploLoginInstrutor.focus();
+                return false;
+            }
+            if(senhaInstrutor=="" || senhaInstrutor.length < 4 || senhaInstrutor.length > 255){
+                alert("Campo Endereco é obrigatório")
+                formtabela.exemploSenhaInstrutores.focus();
+                return false;
+            }
+
+
+            <!-- tabela Matricula-->
+            var turmaId= formtabela.exemploTurmaId.value;
+            var alunoId= formtabela.exemploAlunoId.value;
+            var dataMatricula= formtabela.exemploDataMatricula.value;
+            var notaMatricula= formtabela.exemploNotaMatricula.value;
+
+            if( turmaId=="" || turmaId.length < 4 || turmaId.length > 10){
+                alert("Campo Turma_Id é obrigatório")
+                formtabela.exemploTurmaId.focus();
+                return false;
+            }
+            if(alunoId=="" || alunoId.length < 4 || alunoId.length > 11 ){
+                alert("Campo Aluno_Id é obrigatório")
+                formtabela.exemploAlunoId.focus();
+                return false;
+            }
+            if(dataMatricula=="" || dataMatricula.length < 4 || dataMatricula.length > 14){
+                alert("Campo valor Data Matricula é obrigatório")
+                formtabela.exemploDataMatricula.focus();
+                return false;
+            }
+            if(!patternData.test(dataMatricula)){
+                alert("Digite a data no formato Dia/Mês/Ano");
+                formtabela.exemploDataMatricula.focus();
+                return false;
+            }
+            if(notaMatricula=="" || notaMatricula.length < 4 || notaMatricula.length > 11){
+                alert("Campo nota é obrigatório")
+                formtabela.exemploNotaMatricula.focus();
+                return false;
+            }
+
+            <!-- tabela Turma-->
+            var instrutorTurma= formtabela.exemploInstrutorTurma.value;
+            var CursoId= formtabela.exemploCursoIdTurma.value;
+            var dataInicioTurma= formtabela.exemploDataInicioTurma.value;
+            var dataFinalTurma= formtabela.exemploDataFinalTurma.value;
+            var cargaHoraTurma= formtabela.exemploCargaHoraTurma.value;
+            var patternData = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/;
+
+            if( instrutorTurma=="" || instrutorTurma.length < 4 || instrutorTurma.length > 11){
+                alert("Campo Turma_Id é obrigatório")
+                formtabela.exemploInstrutorTurma.focus();
+                return false;
+            }
+            if(CursoId=="" || CursoId.length < 4 || CursoId.length > 10 ){
+                alert("Campo CursoId é obrigatório")
+                formtabela.exemploCursoIdTurma.focus();
+                return false;
+            }
+            if(dataInicioTurma=="" || dataInicioTurma.length < 4 || dataInicioTurma.length > 14){
+                alert("Campo dataInicio é obrigatório")
+                formtabela.exemploDataInicioTurma.focus();
+                return false;
+            }
+            if(!patternData.test(dataInicioTurma)){
+                alert("Digite a data no formato Dia/Mês/Ano");
+                formtabela.dataInicioTurma.focus();
+                return false;
+            }
+            if(dataFinalTurma=="" || dataFinalTurma.length < 4 || dataFinalTurma.length > 9){
+                alert("Campo Data Final é obrigatório")
+                formtabela.exemploDataFinalTurma.focus();
+                return false;
+            }
+            if(!patternData.test(dataFinalTurma)){
+                alert("Digite a data no formato Dia/Mês/Ano");
+                formtabela.exemploDataFinalTurma.focus();
+                return false;
+            }
+            if(cargaHoraTurma=="" || cargaHoraTurma.length < 4 || cargaHoraTurma.length > 5){
+                alert("Campo Carga Hora é obrigatório")
+                formtabela.exemploCargaHoraTurma.focus();
+                return false;
+            }
+
+
+            <!-- tabela administrador-->
+            var NomeAdministrador= formtabela.exemploNomeAdministrador.value;
+            var LoginAdministrador= formtabela.exemploLoginAdministrador.value;
+            var SenhaAdministrador= formtabela.exemploSenhaAdministrador.value;
+
+            if( NomeAdministrador=="" || NomeAdministrador.length < 4 || NomeAdministrador.length > 50){
+                alert("Campo Nome é obrigatório")
+                formtabela.exemploNomeAdministrador.focus();
+                return false;
+            }
+            if(LoginAdministrador=="" || LoginAdministrador.length < 4 || LoginAdministrador.length > 20){
+                alert("Campo Login é obrigatório")
+                formtabela.exemploLoginAdministrador.focus();
+                return false;
+            }
+            if(SenhaAdministrador=="" || SenhaAdministrador.length < 3){
+                alert("Campo Senha é obrigatório, preencha o campo senha com o mínimo de 6 caracteres")
+                formtabela.exemploSenhaAdministrador.focus();
+                return false;
+            }
+            if(SenhaAdministrador.length < 5 || SenhaAdministrador.length > 255){
+                alert("Preencha o campo senha com o mínimo de 6 caracteres!")
+                formtabela.exemploSenhaAdministrador.focus();
+                return false;
+            }
+
+
+
+            <!-- tabela aluno-->
+            var nomeAluno= formtabela.exemploNomeAluno.value;
+            var cpfAluno= formtabela.exemploCpfAluno.value;
+            var celularAluno= formtabela.exemploCelularAluno.value;
+            var cepAluno= formtabela.exemploCepAluno.value;
+            var enderecoAluno= formtabela.exemploEnderecoAluno.value;
+            var emailAluno= formtabela.exemploEmailAluno.value;
+            var loginAluno= formtabela.exemploLoginAluno.value;
+            var senhaAluno= formtabela.exemploSenhaAluno.value;
+            var cidadeAluno= formtabela.exemploCidadeAluno.value;
+            var bairroAluno= formtabela.exemploBairroAluno.value;
+
+
+            if( nomeAluno=="" || nomeAluno.length < 4 || nomeAluno.length > 50){
+                alert("Campo nome é obrigatório")
+                formtabela.exemploNomeAluno.focus();
+                return false;
+            }
+            if(cpfAluno=="" || cpfAluno.length < 4 || cpfAluno.length > 10 ){
+                alert("Campo CPF é obrigatório")
+                formtabela.exemploCpfAluno.focus();
+                return false;
+            }
+            if(celularAluno=="" || celularAluno.length < 4 || celularAluno.length > 14){
+                alert("Campo celular é obrigatório")
+                formtabela.exemploCelularAluno.focus();
+                return false;
+            }
+            if(cepAluno=="" || cepAluno.length < 4 || cepAluno.length > 9){
+                alert("Campo Cep é obrigatório")
+                formtabela.exemploCepAluno.focus();
+                return false;
+            }
+            if(enderecoAluno=="" || enderecoAluno.length < 4 || enderecoAluno.length > 50){
+                alert("Campo Endereco é obrigatório")
+                formtabela.exemploEnderecoAluno.focus();
+                return false;
+            }
+            if(emailAluno=="" || emailAluno.indexOf('@')== -1 || emailAluno.length < 4 || endereco.length > 50){
+                alert("Campo E-mail obrigatório")
+                formtabela.exemploEmailAluno.focus();
+                return false;
+            }
+            if(loginAluno=="" || loginAluno.length < 4 || loginAluno.length > 20){
+                alert("Campo Login é obrigatório")
+                formtabela.exemploLoginAluno.focus();
+                return false;
+            }
+            if(senhaAluno=="" || senhaAluno.length < 3){
+                alert("Campo Senha é obrigatório, preencha o campo senha com o mínimo de 6 caracteres")
+                formtabela.exemploSenhaAluno.focus();
+                return false;
+            }
+            if(senhaAluno.length < 5 || senhaAluno.length > 255){
+                alert("Preencha o campo senha com o mínimo de 6 caracteres!")
+                formtabela.exemploSenhaAluno.focus();
+                return false;
+            }
+            if(cidadeAluno=="" || cidadeAluno.length < 4 || cidadeAluno.length > 30){
+                alert("Campo Cidade é obrigatório")
+                formtabela.exemploCidadeAluno.focus();
+                return false;
+            }
+            if(bairroAluno=="" || bairroAluno.length < 4 || bairroAluno.length > 30){
+                alert("Campo bairro é obrigatório")
+                formtabela.exemploBairroAluno.focus();
+                return false;
+            }
+
+        }
+    </script>
+
+
+
 </head>
 
 <body>
@@ -52,7 +304,7 @@
 
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                    <form>
+                    <form name="formtabela">
                         <div class="form-group">
                             <label for="exemploNomeCursos">Nome</label>
                             <input class="form-control" id="exemploNomeCursos">
@@ -88,7 +340,7 @@
             </div>
         <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
-                <form>
+                <form name="formtabela">
                     <div class="form-group">
                         <label for="exemploNomeInstrutor">Nome</label>
                         <input class="form-control" id="exemploNomeInstrutor">
@@ -124,7 +376,7 @@
             </div>
             <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
-                    <form>
+                    <form name="formtabela">
                         <div class="form-group">
                             <label for="exemploTurmaId">Turma_Id</label>
                             <input class="form-control" id="exemploTurmaId">
@@ -156,7 +408,7 @@
             </div>
             <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
                 <div class="card-body">
-                    <form>
+                    <form name="formtabela">
                         <div class="form-group">
                             <label for="exemploInstrutorTurma">Instrutor_Id</label>
                             <input class="form-control" id="exemploInstrutorTurma">
@@ -192,7 +444,7 @@
             </div>
             <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
                 <div class="card-body">
-                    <form>
+                    <form name="formtabela">
                         <div class="form-group">
                             <label for="exemploNomeAdministrador">Nome</label>
                             <input class="form-control" id="exemploNomeAdministrador">
@@ -220,7 +472,7 @@
             </div>
             <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordionExample">
                 <div class="card-body">
-                    <form>
+                    <form name="formtabela">
                         <div class="form-group">
                             <label for="exemploCpfAluno">Cpf</label>
                             <input class="form-control" id="exemploCpfAluno">
